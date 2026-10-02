@@ -1,0 +1,748 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #0b3b2e;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.section {
+    padding: 80px 6%;
+}
+
+.section-label {
+    color: #c69b20;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+}
+
+.btn-green {
+    background-color: #0b3b2e;
+    color: goldenrod;
+}
+
+.btn-gold {
+    background-color: #cba620;
+    color: #17382e;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #17382e;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #fffaf0;
+    padding: 20px 6%;
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.crown-logo {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand h2 {
+    font-size: 28px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-list a {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+
+    background-color: #073b2d;
+    color: white;
+}
+
+.hero-content,
+.hero-image {
+    width: 50%;
+}
+
+.hero-content {
+    padding: 75px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eyebrow {
+    color: #d3ad26;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.gold-line {
+    width: 85px;
+    height: 3px;
+    background-color: #cba620;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    background-color: #073b2d;
+    color: white;
+
+    padding: 25px 6%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit-icon {
+    color: #d1a820;
+    font-size: 25px;
+}
+
+.benefit h4 {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.benefit p {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background-color: #fffaf0;
+}
+
+.services .section-label {
+    text-align: center;
+}
+
+.service-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.service-card {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card img {
+    width: 48%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-text {
+    padding-top: 15px;
+}
+
+.service-text h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.service-text p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-text a {
+    color: #b18b15;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+
+/* =========================
+   MENU SHOWCASE
+========================= */
+
+.menu-showcase {
+    background-color: #fffaf0;
+}
+
+.section-heading-row {
+    max-width: 1150px;
+    margin: 0 auto 30px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.section-heading-row h2 {
+    font-size: 32px;
+}
+
+.small-button {
+    background-color: #0b3b2e;
+    color: white;
+    padding: 9px 15px;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+.food-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.food-card {
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.food-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 15px 12px 5px;
+    font-size: 16px;
+}
+
+.food-card a {
+    padding: 0 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   CHEF
+========================= */
+
+.chef-section {
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    background-color: white;
+}
+
+.chef-image {
+    width: 75%;
+}
+
+.chef-image img {
+    height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.chef-content {
+    width: 55%;
+}
+
+.chef-content h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.chef-content p:not(.section-label) {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.chef-content .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    background-color: #0a3d30;
+    color: white;
+    padding: 80px 6%;
+}
+
+.why-us > h2,
+.why-us > p,
+.why-grid {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-us h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.gold-text {
+    color: #d1a820;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 30px 25px;
+    border-radius: 7px;
+}
+
+.why-card span {
+    color: #d1a820;
+    font-size: 11px;
+}
+
+.why-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.why-card p {
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews {
+    background-color: #fffaf0;
+}
+
+.reviews > h2,
+.reviews > p,
+.review-grid {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    background-color: white;
+    border: 1px solid #eee8dc;
+    border-radius: 8px;
+    padding: 30px;
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.stars {
+    color: #d0a51e;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.review-card h3 {
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.review-person {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-person strong {
+    font-size: 11px;
+}
+
+.review-person span {
+    font-size: 10px;
+    color: #777;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background-color: white;
+}
+
+.gallery .section-heading-row a {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.gallery-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.gallery-grid img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.cta {
+    background-color: #d0a523;
+    padding: 65px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 13px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #211f1a;
+    color: white;
+
+    padding: 60px 8%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-brand h2 {
+    color: #d0a523;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    font-size: 12px;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+
+.footer h4 {
+    color: #d0a523;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a,
+.footer-contact p {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chef-section {
+        flex-direction: column;
+    }
+
+    .chef-image,
+    .chef-content {
+        width: 100%;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .brand h2 {
+        font-size: 20px;
+    }
+
+    .navbar > .btn {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 60px 25px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-card img {
+        height: 350px;
+    }
+
+    .chef-section {
+        padding: 60px 25px;
+    }
+
+    .chef-image img {
+        height: 400px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+}
